@@ -1,0 +1,15 @@
+<div class="page-width">
+  <h1 class="small--text-center">{{ page.title }}</h1>
+  <div class="content-block">
+    <div class="rte rte--indented-images">
+      {{ page.content }}
+      {% section 'map' %}
+      {% section 'team-members' %}
+    </div>
+  </div>
+
+  {% section 'featured-products-subsection' %}
+</div>
+{% comment %} {% section 'team-members' %} {% endcomment %}
+{% comment %} {% section 'map' %} {% endcomment %}
+
